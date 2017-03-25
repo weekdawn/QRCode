@@ -27,7 +27,9 @@ class QrCreate:
 		img.save(self.img_name)
 		
 if __name__ == '__main__':
-	qr = QrCreate(raw_input("Please input your QRCode data:").decode('gbk'),raw_input("Please input QRCode name:")+".png")
+	data = raw_input("Please input your QRCode data:").decode('gbk')
+	img_name = raw_input("Please input QRCode name:")+".png"
+	qr = QrCreate(data, img_name)
 	qr.create()
 	print "QRCode created successfully!"
 	os.system("pause")

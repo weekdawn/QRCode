@@ -28,6 +28,6 @@ def qrScan(file_name):
 			
 
 if __name__ == '__main__':
-	name = 'test001.png'
+	name = raw_input("Please imput the QRcode image:")
 	q = qrScan(name)
 	os.system("pause")
